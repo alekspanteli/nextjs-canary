@@ -4,7 +4,7 @@ import localFont from 'next/font/local'
 const inter = localFont({ 
   src: './Inter-VariableFont_slnt,wght.ttf',
   variable: '--font-inter',
-  display: 'swap', 
+  display: 'swap',
 })
 
 export const metadata = {
