@@ -1,4 +1,10 @@
 import './globals.css'
+import localFont from 'next/font/local'
+
+const inter = localFont({ 
+  src: './Inter-VariableFont_slnt,wght.ttf',
+  variable: '--font-inter', 
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable}`}>
       <body>{children}</body>
     </html>
   )
